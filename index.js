@@ -28,18 +28,18 @@ var accounts = require('./data/accounts.json');
         await page.keyboard.press('Enter');
 
         // recovery
-        await page.waitFor(10000);
+        await page.waitFor(2000);
         await page.mouse.click(533, 590);
         await console.log('click 1');
 
-        // first login
-        await page.waitForNavigation();
-        await page.waitFor(10000);
-        await page.mouse.click(400, 530);
-        await console.log('click 2');
-        await page.waitFor(5000);
-        await page.mouse.click(400, 530);
-        await console.log('click 3');
+        // // first login
+        // await page.waitForNavigation();
+        // await page.waitFor(10000);
+        // await page.mouse.click(400, 530);
+        // await console.log('click 2');
+        // await page.waitFor(5000);
+        // await page.mouse.click(400, 530);
+        // await console.log('click 3');
 
         // recovery mail
         // await page.waitForNavigation(); //optional

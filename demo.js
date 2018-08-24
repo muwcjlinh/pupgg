@@ -32,17 +32,17 @@ var accounts = require('./data/accounts.json');
         await page.mouse.click(533, 590);
         await console.log('click 1');
 
-        // first login
-        await page.waitForNavigation();
-        await page.waitFor(10000);
-        await page.mouse.click(400, 530);
-        await console.log('click 2');
-        await page.waitFor(5000);
-        await page.mouse.click(400, 530);
-        await console.log('click 3');
+        // // first login
+        // await page.waitForNavigation();
+        // await page.waitFor(10000);
+        // await page.mouse.click(400, 530);
+        // await console.log('click 2');
+        // await page.waitFor(5000);
+        // await page.mouse.click(400, 530);
+        // await console.log('click 3');
 
         // recovery mail
-        // await page.waitForNavigation(); //optional
+        await page.waitForNavigation(); //optional
         await page.waitFor(5000);
         await page.goto('https://myaccount.google.com/recovery/email?rapt=AEjHL4OCSAL_ulKLqAu5Y1Cjv-4rkwhtPoy2w10h7lidjBSu_qCSYiC4vVVTCDjDgzbp5txGBtrqPyAD5Rx5HmGa5QYxElfX7A');
         await page.mouse.click(366, 290);
@@ -87,43 +87,43 @@ var accounts = require('./data/accounts.json');
         await console.log('click 11');
 
         await page.waitForNavigation();
-        const page2 = await browser.newPage();
-        page2.setDefaultNavigationTimeout(60000);
-        await page2.goto('https://console.developers.google.com');
-        await page.waitFor(10000);
+        // const page2 = await browser.newPage();
+        // page2.setDefaultNavigationTimeout(60000);
+        await page.goto('https://console.developers.google.com');
+        await page.waitFor(6000);
 
-        await page2.mouse.click(176, 316);
+        await page.mouse.click(176, 316);
         await console.log('click 12');
-        await page2.waitFor(2000);
-        await page2.mouse.click(176, 387);
+        await page.waitFor(2000);
+        await page.mouse.click(176, 387);
         await console.log('click 13')
-        await page2.waitFor(2000);
-        await page2.mouse.click(609, 464);
+        await page.waitFor(2000);
+        await page.mouse.click(609, 464);
         await console.log('click 14')
-        await page2.waitFor(2000);
-        await page2.mouse.click(720, 222);
+        await page.waitFor(2000);
+        await page.mouse.click(720, 222);
         await console.log('click 15')
-        await page2.waitFor(5000);
-        await page2.mouse.click(371, 392);
+        await page.waitFor(5000);
+        await page.mouse.click(371, 392);
         await console.log('click 16')
-        await page2.waitFor(5000);
-        await page2.mouse.click(59, 393);
+        await page.waitFor(5000);
+        await page.mouse.click(59, 393);
         await console.log('click 17')
-        await page2.waitFor(40000);
+        await page.waitFor(40000);
 
         // click tab api
-        await page2.mouse.click(75, 276);
+        await page.mouse.click(75, 276);
         await console.log('click 18')
-        await page2.waitFor(20000);
+        await page.waitFor(20000);
         // create api
-        await page2.mouse.click(414, 525);
+        await page.mouse.click(414, 525);
         await console.log('click 19');
-        await page2.waitFor(5000);
-        await page2.mouse.click(485, 333);
+        await page.waitFor(5000);
+        await page.mouse.click(485, 333);
         await console.log('click 20');
-        await page2.waitFor(20000);
+        await page.waitFor(20000);
         //copy api
-        await page2.mouse.click(623, 300);
+        await page.mouse.click(623, 300);
         await console.log('click 21');
 
         let api = clipboardy.readSync();
